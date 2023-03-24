@@ -9,41 +9,41 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = escoladotnet
 build_property.RootNamespace = escoladotnet
-build_property.ProjectDir = C:\Users\romul\source\senai\recprof\EscolaDotNet\
+build_property.ProjectDir = D:\projeto final\EscolaDotNet\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\romul\source\senai\recprof\EscolaDotNet
+build_property.MSBuildProjectDirectory = D:\projeto final\EscolaDotNet
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/romul/source/senai/recprof/EscolaDotNet/Views/Home/Index.cshtml]
+[D:/projeto final/EscolaDotNet/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/romul/source/senai/recprof/EscolaDotNet/Views/Home/Mensagem.cshtml]
+[D:/projeto final/EscolaDotNet/Views/Home/Mensagem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZW5zYWdlbS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/romul/source/senai/recprof/EscolaDotNet/Views/Home/ViewModel.cshtml]
+[D:/projeto final/EscolaDotNet/Views/Home/ViewModel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWV3TW9kZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/romul/source/senai/recprof/EscolaDotNet/Views/Shared/Error.cshtml]
+[D:/projeto final/EscolaDotNet/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/romul/source/senai/recprof/EscolaDotNet/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/projeto final/EscolaDotNet/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/romul/source/senai/recprof/EscolaDotNet/Views/_ViewImports.cshtml]
+[D:/projeto final/EscolaDotNet/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/romul/source/senai/recprof/EscolaDotNet/Views/_ViewStart.cshtml]
+[D:/projeto final/EscolaDotNet/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/romul/source/senai/recprof/EscolaDotNet/Views/Shared/_Layout.cshtml]
+[D:/projeto final/EscolaDotNet/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-mk9ymmfeae
