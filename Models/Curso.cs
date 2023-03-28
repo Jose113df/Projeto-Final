@@ -18,6 +18,12 @@ public class Curso
     public int CargaHoraria { get; set; }
     public int PrazoMeses { get; set; }
      
+     // Dentro do workflow 
+     public bool Concluido { get; set; }
+
+
+
+
     //sobrecarga
     public Curso(){
 
@@ -31,7 +37,9 @@ public class Curso
                 string? conteudo,
                 string? recursos,
                 int cargaHoraria,
-                int prazoMeses)
+                int prazoMeses,
+                bool concluido = false
+                )
     {
         Id = id;
         Nome = nome;
@@ -43,5 +51,33 @@ public class Curso
         Recursos = recursos;
         CargaHoraria = cargaHoraria;
         PrazoMeses = prazoMeses;
+        Concluido = concluido;
     }
+
+    public Curso(
+                string? nome,
+                string? titulo,
+                string? descricao,
+                string? perfil,
+                string? preRequisitos,
+                string? conteudo,
+                string? recursos,
+                int cargaHoraria,
+                int prazoMeses,
+                bool concluido = false
+                )
+    {
+       
+        Nome = nome;
+        Titulo = titulo;
+        Descricao = descricao;
+        Perfil = perfil;
+        PreRequisitos = preRequisitos;
+        Conteudo = conteudo;
+        Recursos = recursos;
+        CargaHoraria = cargaHoraria;
+        PrazoMeses = prazoMeses;
+        Concluido = concluido;
+    }
+
 }

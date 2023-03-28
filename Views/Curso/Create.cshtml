@@ -1,0 +1,65 @@
+<!--tipagem aqui-->
+@model CreateCursoViewModel
+  
+  <div class="row" >
+<!--dentro da linha vamos criar uma coluna-->
+
+    <div class="col">
+
+        <h1 class="text-center">@ViewData["title"]</h1>
+<form method="post">
+ 
+<!--Nome-->
+  <div class="mb-3">
+    <label asp-for= "Nome" class="form-label">Nome</label>
+    <input asp-for= "Nome" type="text" class="form-control"placeholder="Digite o NOME do curso">
+  </div>
+
+<!--Titulo-->
+  <div class="mb-3">
+    <label asp-for= "Titulo" class="form-label">Titulo</label>
+    <input asp-for= "Titulo" type="text" class="form-control"placeholder="Digite o TITULO do curso">
+</div>
+<!--Descrição-->
+  <div class="mb-3">
+    <label asp-for= "Descricao" class="form-label">Descrição</label>
+    <input asp-for= "Descricao" type="text" class="form-control"placeholder="Digite a DESCRIÇÃO do curso">
+</div>
+<!--Perfil-->
+  <div class="mb-3">
+    <label asp-for= "Perfil" class="form-label">Perfil</label>
+    <input asp-for= "Perfil" type="text" class="form-control"placeholder="Digite o PERFIL do curso">
+</div>
+<!--Requisito-->
+  <div class="mb-3">
+    <label asp-for= "PreRequisitos" class="form-label">Requisito</label>
+    <input asp-for= "PreRequisitos" type="text" class="form-control"placeholder="Digite o Requisito do curso">
+</div>
+
+<!--Conteûdo-->
+  <div class="mb-3">
+    <label asp-for= "Conteudo" class="form-label">Conteûdo</label>
+    <input asp-for= "Conteudo" type="text" class="form-control"placeholder="Digite o Conteûdo do curso">
+</div>
+<!--Recursos-->
+  <div class="mb-3">
+    <label asp-for= "Recursos" class="form-label">Recursos</label>
+    <input asp-for= "Recursos" type="text" class="form-control"placeholder="Digite o RECURSOS do curso">
+</div>
+<!--Carga Horária-->
+  <div class="mb-3">
+    <label asp-for= "CargaHoraria" class="form-label">Carga Horária</label>
+    <input asp-for= "CargaHoraria" type="text" class="form-control"placeholder="Digite a CARGA HORÁRIA do curso">
+</div>
+<!--Prazo em Semanas-->
+  <div class="mb-3">
+    <label asp-for= "PrazoMeses" class="form-label">Prazo em Semanas</label>
+    <input asp-for= "PrazoMeses" type="text" class="form-control"placeholder="Digite o PRAZO do curso">
+</div>
+
+  <button type="submit" class="btn btn-primary">CADASTRAR</button>
+</form>
+
+    </div>
+
+</div>

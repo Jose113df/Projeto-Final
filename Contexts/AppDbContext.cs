@@ -8,12 +8,12 @@ namespace EscolaDotNet.Contexts;
 public class AppDbContext : DbContext
 {
 
-    public DbSet<Curso> Cursos => Set<Curso>();
+    public DbSet<Curso> Cursos => Set<Curso>(); // representa a tabela
 
     protected override void OnConfiguring(DbContextOptionsBuilder builder)
     {
 
-        builder.UseSqlServer("Server=DESKTOP-C55KHCVSQLEXPRESS;Database=EscolaDotNEt; Trusted_Connection=True");
+        builder.UseSqlServer("Server=DESKTOP-C55KHCV\\SQLEXPRESS;Database=EscolaDotNEt;Integrated Security=True;TrustServerCertificate=True;");
 
     }
 

@@ -12,7 +12,7 @@ public class CursoEntityConfig : IEntityTypeConfiguration<Curso>
         builder.ToTable("Curso");
         builder.HasKey(c => c.Id);
         builder.Property(c => c.Id)
-               .HasColumnName("Id");
+               .HasColumnName("id");
 
         /*
          public int Id { get; set; }
@@ -58,7 +58,7 @@ public int PrazoMeses { get; set; }
                  .IsRequired();
 
         builder.Property(c => c.Recursos)
-                 .HasColumnName("resursos")
+                 .HasColumnName("recursos")
                  .HasColumnType("nvarchar(100)")
                  .IsRequired();
 
@@ -68,8 +68,13 @@ public int PrazoMeses { get; set; }
                  .IsRequired();
 
         builder.Property(c => c.PrazoMeses)
-                 .HasColumnName("Prazo")
+                 .HasColumnName("prazo")
                  .HasColumnType("int")
                  .IsRequired();
+
+        builder.Property(c => c.Concluido) //fluent api
+                    .HasColumnName("concluido")   
+                    .HasColumnType("bit")                 
+                    .IsRequired();
     }
 }
