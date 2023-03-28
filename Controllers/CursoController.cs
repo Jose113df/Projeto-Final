@@ -29,7 +29,7 @@ public class CursoController : Controller
     //mostrar a pagina NÃO tranporta dados
     public IActionResult Create()
     {
-        ViewData["Title"] = "Cadastrer um Curso";
+        ViewData["Title"] = "Cadastrar um Curso";
         return View();
     }
 
@@ -67,7 +67,7 @@ public class CursoController : Controller
         return RedirectToAction(nameof(Index));
     }
 
-    [HttpPut]
+    
     public IActionResult Edit(int id)
     {
         ViewData["Title"] = "Editar Curso";
@@ -90,7 +90,28 @@ public class CursoController : Controller
             Titulo = curso.Titulo
         };
         return View(viewModel);
+
     }
 
+ [HttpPost]
+    public IActionResult Edit(int id, EditCursoViewModel data){
 
+         var curso = _context.Cursos.Find(id);
+         if(curso is null){
+            return NotFound();
+         }
+         curso.CargaHoraria = data.CargaHoraria;
+         curso.Conteudo = data.Conteudo;
+         curso.Descricao = data.Descricao;
+         curso.Nome = data.Nome;
+         curso.PrazoMeses = data.PrazoMeses;
+         curso.Recursos = data.Recursos;
+         curso.PreRequisitos = data.PreRequisitos;
+         curso.Titulo = data.Titulo;
+         curso.Perfil = data.Perfil;
+         _context.SaveChanges();
+         return RedirectToAction(nameof(Index));   
+   
+    }
+  
 }

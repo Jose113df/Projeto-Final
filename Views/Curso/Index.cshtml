@@ -9,7 +9,7 @@
     <tr>
         <th scope="col">Id</th>
         <th scope="col">Nome</th>
-        <th scope="col">Iniciar</th>
+        <th scope="col">Concluir</th>
         <th scope="col">Deletar</th>
         <th scorpe="col">Atualizar</th>
        
@@ -22,7 +22,8 @@
         <tr>
             <td>@item.Id</td>
             <td>@item.Nome</td>
-            <td><button type="button" class="btn btn-outline-success">Iniciar</button></td>
+            <td><button type="button" class="btn btn-outline-success">Concluir</button></td>
+           
             <td><a 
             asp-controller="Curso"
             asp-action="Delete"

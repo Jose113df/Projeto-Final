@@ -72,9 +72,5 @@ public int PrazoMeses { get; set; }
                  .HasColumnType("int")
                  .IsRequired();
 
-        builder.Property(c => c.Concluido) //fluent api
-                    .HasColumnName("concluido")   
-                    .HasColumnType("bit")                 
-                    .IsRequired();
     }
 }

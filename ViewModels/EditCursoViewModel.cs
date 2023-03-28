@@ -13,5 +13,5 @@ public class EditCursoViewModel
     public string? Recursos { get; set; }
     public int CargaHoraria { get; set; }
     public int PrazoMeses { get; set; }
-    
+  
 }

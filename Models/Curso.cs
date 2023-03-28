@@ -19,7 +19,7 @@ public class Curso
     public int PrazoMeses { get; set; }
      
      // Dentro do workflow 
-     public bool Concluido { get; set; }
+     
 
 
 
@@ -37,8 +37,8 @@ public class Curso
                 string? conteudo,
                 string? recursos,
                 int cargaHoraria,
-                int prazoMeses,
-                bool concluido = false
+                int prazoMeses
+              
                 )
     {
         Id = id;
@@ -51,7 +51,7 @@ public class Curso
         Recursos = recursos;
         CargaHoraria = cargaHoraria;
         PrazoMeses = prazoMeses;
-        Concluido = concluido;
+        
     }
 
     public Curso(
@@ -63,8 +63,8 @@ public class Curso
                 string? conteudo,
                 string? recursos,
                 int cargaHoraria,
-                int prazoMeses,
-                bool concluido = false
+                int prazoMeses
+                
                 )
     {
        
@@ -77,7 +77,7 @@ public class Curso
         Recursos = recursos;
         CargaHoraria = cargaHoraria;
         PrazoMeses = prazoMeses;
-        Concluido = concluido;
+       
     }
 
 }
