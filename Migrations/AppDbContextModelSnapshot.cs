@@ -68,6 +68,10 @@ namespace escoladotnet.Migrations
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("recursos");
 
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("status");
+
                     b.Property<string>("Titulo")
                         .IsRequired()
                         .HasColumnType("nvarchar(100)")

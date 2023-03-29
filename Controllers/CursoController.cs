@@ -50,7 +50,7 @@ public class CursoController : Controller
     [HttpPost]
     public IActionResult Create(CreateCursoViewModel data)
     {
-        var curso = new Curso (data.Nome,
+        var curso = new Curso(data.Nome,
                                 data.Titulo,
                                 data.Descricao,
                                 data.Perfil,
@@ -58,7 +58,7 @@ public class CursoController : Controller
                                 data.Conteudo,
                                 data.Recursos,
                                 data.CargaHoraria,
-                                data.PrazoMeses                              
+                                data.PrazoMeses
                                 );
 
         _context.Add(curso);
@@ -67,7 +67,7 @@ public class CursoController : Controller
         return RedirectToAction(nameof(Index));
     }
 
-    
+
     public IActionResult Edit(int id)
     {
         ViewData["Title"] = "Editar Curso";
@@ -93,25 +93,41 @@ public class CursoController : Controller
 
     }
 
- [HttpPost]
-    public IActionResult Edit(int id, EditCursoViewModel data){
+    [HttpPost]
+    public IActionResult Edit(int id, EditCursoViewModel data)
+    {
 
-         var curso = _context.Cursos.Find(id);
-         if(curso is null){
+        var curso = _context.Cursos.Find(id);
+        if (curso is null)
+        {
             return NotFound();
-         }
-         curso.CargaHoraria = data.CargaHoraria;
-         curso.Conteudo = data.Conteudo;
-         curso.Descricao = data.Descricao;
-         curso.Nome = data.Nome;
-         curso.PrazoMeses = data.PrazoMeses;
-         curso.Recursos = data.Recursos;
-         curso.PreRequisitos = data.PreRequisitos;
-         curso.Titulo = data.Titulo;
-         curso.Perfil = data.Perfil;
-         _context.SaveChanges();
-         return RedirectToAction(nameof(Index));   
-   
+        }
+        curso.CargaHoraria = data.CargaHoraria;
+        curso.Conteudo = data.Conteudo;
+        curso.Descricao = data.Descricao;
+        curso.Nome = data.Nome;
+        curso.PrazoMeses = data.PrazoMeses;
+        curso.Recursos = data.Recursos;
+        curso.PreRequisitos = data.PreRequisitos;
+        curso.Titulo = data.Titulo;
+        curso.Perfil = data.Perfil;
+        _context.SaveChanges();
+        return RedirectToAction(nameof(Index));
+
     }
-  
+
+    public IActionResult ModifyStatus(int id)
+    {
+        //Localizando pela chave primaria 
+        var curso = _context.Cursos.Find(id);
+        if (curso is null)
+        {
+            return NotFound();
+        }
+
+        curso.Status = "Concluido";
+        _context.SaveChanges();
+
+        return RedirectToAction(nameof(Index));
+    }
 }

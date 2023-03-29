@@ -72,5 +72,9 @@ public int PrazoMeses { get; set; }
                  .HasColumnType("int")
                  .IsRequired();
 
+        builder.Property(c => c.Status)
+                 .HasColumnName("status")
+                 .HasColumnType("nvarchar(100)")
+                 ;
     }
 }

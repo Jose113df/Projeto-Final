@@ -5,7 +5,7 @@
 namespace escoladotnet.Migrations
 {
     /// <inheritdoc />
-    public partial class criandoatabelacurso : Migration
+    public partial class CriandoStatusMK4 : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -14,7 +14,7 @@ namespace escoladotnet.Migrations
                 name: "Curso",
                 columns: table => new
                 {
-                    Id = table.Column<int>(type: "int", nullable: false)
+                    id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nome = table.Column<string>(type: "nvarchar(100)", nullable: false),
                     titulo = table.Column<string>(type: "nvarchar(100)", nullable: false),
@@ -22,13 +22,14 @@ namespace escoladotnet.Migrations
                     perfil = table.Column<string>(type: "nvarchar(100)", nullable: false),
                     requisito = table.Column<string>(type: "nvarchar(100)", nullable: false),
                     conteudo = table.Column<string>(type: "text", nullable: false),
-                    resursos = table.Column<string>(type: "nvarchar(100)", nullable: false),
+                    recursos = table.Column<string>(type: "nvarchar(100)", nullable: false),
                     ch = table.Column<int>(type: "int", nullable: false),
-                    Prazo = table.Column<int>(type: "int", nullable: false)
+                    prazo = table.Column<int>(type: "int", nullable: false),
+                    status = table.Column<string>(type: "nvarchar(100)", nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Curso", x => x.Id);
+                    table.PrimaryKey("PK_Curso", x => x.id);
                 });
         }
 

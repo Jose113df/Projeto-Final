@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace escoladotnet.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230324150911_criando a tabela curso")]
-    partial class criandoatabelacurso
+    [Migration("20230329142751_CriandoStatusMK5")]
+    partial class CriandoStatusMK5
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -29,7 +29,7 @@ namespace escoladotnet.Migrations
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
-                        .HasColumnName("Id");
+                        .HasColumnName("id");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -59,7 +59,7 @@ namespace escoladotnet.Migrations
 
                     b.Property<int>("PrazoMeses")
                         .HasColumnType("int")
-                        .HasColumnName("Prazo");
+                        .HasColumnName("prazo");
 
                     b.Property<string>("PreRequisitos")
                         .IsRequired()
@@ -69,7 +69,11 @@ namespace escoladotnet.Migrations
                     b.Property<string>("Recursos")
                         .IsRequired()
                         .HasColumnType("nvarchar(100)")
-                        .HasColumnName("resursos");
+                        .HasColumnName("recursos");
+
+                    b.Property<string>("Status")
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("status");
 
                     b.Property<string>("Titulo")
                         .IsRequired()

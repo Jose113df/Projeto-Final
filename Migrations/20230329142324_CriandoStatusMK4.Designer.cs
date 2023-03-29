@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace escoladotnet.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20230328144319_AdicionarCampoConcluido")]
-    partial class AdicionarCampoConcluido
+    [Migration("20230329142324_CriandoStatusMK4")]
+    partial class CriandoStatusMK4
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,10 +36,6 @@ namespace escoladotnet.Migrations
                     b.Property<int>("CargaHoraria")
                         .HasColumnType("int")
                         .HasColumnName("ch");
-
-                    b.Property<bool>("Concluido")
-                        .HasColumnType("bool")
-                        .HasColumnName("concluido");
 
                     b.Property<string>("Conteudo")
                         .IsRequired()
@@ -74,6 +70,11 @@ namespace escoladotnet.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(100)")
                         .HasColumnName("recursos");
+
+                    b.Property<string>("Status")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasColumnName("status");
 
                     b.Property<string>("Titulo")
                         .IsRequired()

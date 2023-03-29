@@ -17,17 +17,18 @@ public class Curso
     public string? Recursos { get; set; }
     public int CargaHoraria { get; set; }
     public int PrazoMeses { get; set; }
-     
-     // Dentro do workflow 
-     
+    public string? Status { get; set; }
+    // Dentro do workflow 
+
 
 
 
 
     //sobrecarga
-    public Curso(){
+    public Curso()
+    {
 
-    } 
+    }
     public Curso(int id,
                 string? nome,
                 string? titulo,
@@ -38,7 +39,7 @@ public class Curso
                 string? recursos,
                 int cargaHoraria,
                 int prazoMeses
-              
+                
                 )
     {
         Id = id;
@@ -67,7 +68,7 @@ public class Curso
                 
                 )
     {
-       
+
         Nome = nome;
         Titulo = titulo;
         Descricao = descricao;
@@ -77,7 +78,7 @@ public class Curso
         Recursos = recursos;
         CargaHoraria = cargaHoraria;
         PrazoMeses = prazoMeses;
-       
+        
     }
 
 }
